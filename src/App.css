@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-/* General body */
+/* ------------------ General Body ------------------ */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -8,7 +7,14 @@ body {
     color: #333;
 }
 
-/* Sections */
+/* ------------------ Page Wrapper ------------------ */
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* ------------------ Sections ------------------ */
 section {
     background: white;
     margin: 20px auto;
@@ -26,7 +32,7 @@ section h2 {
     padding-bottom: 4px;
 }
 
-/* Cards */
+/* ------------------ Cards ------------------ */
 .card {
     border: 1px solid #ddd;
     padding: 16px;
@@ -34,6 +40,12 @@ section h2 {
     background-color: #fafafa;
     margin-bottom: 12px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
 /* Student cards */
@@ -46,7 +58,7 @@ section h2 {
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-/* Buttons */
+/* ------------------ Buttons ------------------ */
 button {
     cursor: pointer;
     font-weight: 500;
@@ -54,13 +66,13 @@ button {
     border-radius: 6px;
     padding: 8px 14px;
     transition: 0.2s;
+    margin: 4px 0;
 }
 
 button:hover {
     opacity: 0.9;
 }
 
-/* Primary / secondary buttons */
 .btn-primary {
     background-color: #2563eb;
     color: white;
@@ -74,13 +86,14 @@ button:hover {
     margin-right: 8px;
 }
 
-/* Menu / navigation */
+/* ------------------ Navigation Menu ------------------ */
 nav ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0 0 16px 0;
     gap: 12px;
+    justify-content: center;
 }
 
 nav ul li a {
@@ -97,7 +110,7 @@ nav ul li a:hover {
     color: white;
 }
 
-/* Inputs */
+/* ------------------ Inputs ------------------ */
 input {
     padding: 8px 12px;
     border-radius: 6px;
@@ -111,54 +124,36 @@ input:focus {
     border-color: #2563eb;
 }
 
-/* Footer */
+/* ------------------ Footer ------------------ */
 footer {
     text-align: center;
     padding: 12px 0;
     font-size: 0.85rem;
     color: #777;
     margin-top: 20px;
-=======
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
+/* ------------------ Optional Logo Animation (if any) ------------------ */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
->>>>>>> 6f0579372b85e7d6af9de3e0ab0c332903ba8544
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
