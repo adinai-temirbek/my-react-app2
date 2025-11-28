@@ -58,9 +58,24 @@ function App() {
             <section>
                 <div className="card">
                     <h2>4. Buttons</h2>
-                    <PrimaryButton label="Login" type="primary" />
-                    <PrimaryButton label="Register" type="secondary" />
-                    <PrimaryButton label="Submit" type="primary" />
+
+                    <PrimaryButton
+                        label="Login"
+                        type="primary"
+                        onClick={() => alert("Login button clicked!")}
+                    />
+
+                    <PrimaryButton
+                        label="Register"
+                        type="secondary"
+                        onClick={() => alert("Register button clicked!")}
+                    />
+
+                    <PrimaryButton
+                        label="Submit"
+                        type="primary"
+                        onClick={() => console.log("Submit clicked!")}
+                    />
                 </div>
             </section>
 

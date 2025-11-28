@@ -1,10 +1,19 @@
+// components/PrimaryButton.jsx
+
 import React from "react";
 
-export default function PrimaryButton({ label, type = "primary", ...rest }) {
-    const className = type === "primary" ? "btn-primary" : "btn-secondary";
+function PrimaryButton({ label, type, onClick }) {
+    const className =
+        type === "primary"
+            ? "btn btn-primary"
+            : "btn btn-secondary";
+
     return (
-        <button className={className} {...rest}>
+        <button className={className} onClick={onClick}>
             {label}
         </button>
     );
 }
+
+export default PrimaryButton;
+
